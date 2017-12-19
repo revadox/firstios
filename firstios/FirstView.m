@@ -9,6 +9,7 @@
 #import "FirstView.h"
 
 @interface FirstView ()<UITableViewDataSource,UITableViewDelegate>{
+    NSMutableArray *arrList;
 
 
 }
@@ -16,9 +17,9 @@
 @end
 
 @implementation FirstView
-
 - (void)viewDidLoad {
     [super viewDidLoad];
+   
     // Do any additional setup after loading the view.
 }
 
@@ -27,17 +28,26 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)arrayList {
+   arrList = [NSMutableArray arrayWithObjects:@"hello",@"vaghani",@"how are you?", nil];
+
+}
+
 
 #pragma mark -UITableView DataSource Methods
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-
+    return arrList.count;
 
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-
+    static UITableView *cellId = @"cell";
+    
+    UITableView *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    
+    return cell;
 
 }
 
