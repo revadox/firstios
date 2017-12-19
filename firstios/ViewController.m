@@ -42,6 +42,11 @@
     [_textDown resignFirstResponder];//keyboard hide
     _lableDown.text = [NSString stringWithFormat:@"%@, %@",_textDown.text,msg];
 }
+
+- (IBAction)logout:(id)sender {
+    
+    //logout button
+}
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];//keyboard hide when return button tap
