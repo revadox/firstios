@@ -17,6 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    if(![defaults boolForKey:@"registed"]){
+        _loginBtn.hidden =YES;//here need property reason we just hide button so..no action perform
+        
+    
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,9 +42,10 @@
 }
 */
 
-- (IBAction)login:(UIButton *)sender {
+- (IBAction)loginBtn:(UIButton *)sender {
 }
 
-- (IBAction)register:(UIButton *)sender {
+
+- (IBAction)registerBtn:(id)sender {
 }
 @end

@@ -235,7 +235,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <action selector="login:" destination="JgP-UH-7qz" eventType="touchUpInside" id="1CX-2e-t8k"/>
+                                    <action selector="loginBtn:" destination="JgP-UH-7qz" eventType="touchUpInside" id="xgg-Md-f40"/>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="login" id="FTN-EV-XkP"/>
                                 </connections>
                             </button>
@@ -244,7 +244,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
-                                    <action selector="register:" destination="JgP-UH-7qz" eventType="touchUpInside" id="Sjj-Dv-M6k"/>
+                                    <action selector="registerBtn:" destination="JgP-UH-7qz" eventType="touchUpInside" id="XfL-3z-DdJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -252,8 +252,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="8f8-tb-LyC"/>
                     <connections>
-                        <outlet property="aPassword" destination="OkP-dj-XlQ" id="F29-sT-LZo"/>
+                        <outlet property="loginBtn" destination="yLh-Vr-LHs" id="OCQ-ZC-iUY"/>
                         <outlet property="password" destination="uiI-RC-A4e" id="17H-Xr-1lt"/>
+                        <outlet property="reEnterPassword" destination="OkP-dj-XlQ" id="uOz-51-4si"/>
+                        <outlet property="registerBtn" destination="izK-AZ-MkJ" id="Q5a-LW-b8p"/>
                         <outlet property="userName" destination="BrE-4q-PnO" id="q6e-Oy-PzI"/>
                     </connections>
                 </viewController>
