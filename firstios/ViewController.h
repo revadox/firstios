@@ -17,6 +17,7 @@
 
 - (IBAction)tapButton:(UIButton *)sender;
 - (IBAction)tapDbutton:(id)sender;
+
 - (IBAction)logout:(id)sender;
 
 

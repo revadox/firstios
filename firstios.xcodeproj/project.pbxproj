@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7D745AC61FE8FB3600D119DC /* ios11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D745AC51FE8FB3600D119DC /* ios11.jpg */; };
-		7D745AC91FE91B4000D119DC /* FirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D745AC81FE91B4000D119DC /* FirstView.m */; };
 		7D745ACC1FE933A100D119DC /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D745ACB1FE933A100D119DC /* LoginController.m */; };
 		7DF2C8B31FE8C98000433ED9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF2C8B21FE8C98000433ED9 /* main.m */; };
 		7DF2C8B61FE8C98000433ED9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF2C8B51FE8C98000433ED9 /* AppDelegate.m */; };
@@ -39,8 +38,6 @@
 
 /* Begin PBXFileReference section */
 		7D745AC51FE8FB3600D119DC /* ios11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ios11.jpg; sourceTree = "<group>"; };
-		7D745AC71FE91B4000D119DC /* FirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstView.h; sourceTree = "<group>"; };
-		7D745AC81FE91B4000D119DC /* FirstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstView.m; sourceTree = "<group>"; };
 		7D745ACA1FE933A100D119DC /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
 		7D745ACB1FE933A100D119DC /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 		7DF2C8AE1FE8C98000433ED9 /* firstios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firstios.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,8 +110,6 @@
 				7DF2C8B51FE8C98000433ED9 /* AppDelegate.m */,
 				7DF2C8B71FE8C98000433ED9 /* ViewController.h */,
 				7DF2C8B81FE8C98000433ED9 /* ViewController.m */,
-				7D745AC71FE91B4000D119DC /* FirstView.h */,
-				7D745AC81FE91B4000D119DC /* FirstView.m */,
 				7D745ACA1FE933A100D119DC /* LoginController.h */,
 				7D745ACB1FE933A100D119DC /* LoginController.m */,
 				7DF2C8BA1FE8C98000433ED9 /* Main.storyboard */,
@@ -289,7 +284,6 @@
 			files = (
 				7D745ACC1FE933A100D119DC /* LoginController.m in Sources */,
 				7DF2C8B91FE8C98000433ED9 /* ViewController.m in Sources */,
-				7D745AC91FE91B4000D119DC /* FirstView.m in Sources */,
 				7DF2C8B61FE8C98000433ED9 /* AppDelegate.m in Sources */,
 				7DF2C8B31FE8C98000433ED9 /* main.m in Sources */,
 			);

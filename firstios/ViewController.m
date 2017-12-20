@@ -17,10 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
  
-
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)logout:(id)sender {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -43,15 +47,15 @@
     _lableDown.text = [NSString stringWithFormat:@"%@, %@",_textDown.text,msg];
 }
 
-- (IBAction)logout:(id)sender {
-    
-    //logout button
-}
+
+
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];//keyboard hide when return button tap
     return YES;
 }
+
+
 
 
 @end
