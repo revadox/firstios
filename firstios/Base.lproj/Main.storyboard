@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3q-8k-FUx" colorLabel="IBBuiltInLabel-Orange">
-                                <rect key="frame" x="92.666666666666686" y="181" width="229" height="30"/>
+                                <rect key="frame" x="92.666666666666686" y="225" width="229" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="GbQ-Qc-ggN"/>
                                     <constraint firstAttribute="width" constant="229" id="IvR-H9-oCj"/>
@@ -32,7 +32,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0KR-Yg-8p5">
-                                <rect key="frame" x="96.666666666666686" y="227" width="221" height="30"/>
+                                <rect key="frame" x="96.666666666666686" y="271" width="221" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="221" id="LdK-Av-Lci"/>
                                     <constraint firstAttribute="height" constant="30" id="MlO-jS-TXD"/>
@@ -43,7 +43,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="saD-20-9G1">
-                                <rect key="frame" x="92.666666666666686" y="283" width="229" height="30"/>
+                                <rect key="frame" x="92.666666666666686" y="327" width="229" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="DFT-Zt-o4l"/>
                                     <constraint firstAttribute="width" constant="229" id="DQP-Lh-kHi"/>
@@ -90,7 +90,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6MX-PF-2yQ">
-                                <rect key="frame" x="344" y="76" width="54" height="33"/>
+                                <rect key="frame" x="344" y="76" width="54" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Logout">
@@ -101,7 +101,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.92951425070000004" green="0.95134217310000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.92821592092514038" green="0.9526715874671936" blue="0.99979788064956665" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ck5-y6-KPE" firstAttribute="top" secondItem="L20-Jl-1Yu" secondAttribute="bottom" constant="17.5" id="462-yj-1zP"/>
                             <constraint firstItem="m3q-8k-FUx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CLx-h7-ndP"/>
@@ -118,20 +118,61 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="lmJ-qn-hrj">
-                        <barButtonItem key="rightBarButtonItem" title="Next" id="XGw-9n-HKQ"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="lmJ-qn-hrj"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="lable" destination="m3q-8k-FUx" id="2P4-H5-Ehf"/>
                         <outlet property="lableDown" destination="L20-Jl-1Yu" id="x4l-MK-uVD"/>
                         <outlet property="textDown" destination="tqW-ku-pej" id="66O-9R-m4H"/>
                         <outlet property="textUp" destination="saD-20-9G1" id="CqE-oW-3wP"/>
+                        <segue destination="TSr-8j-7uS" kind="show" id="Hvk-uE-CMJ"/>
+                        <segue destination="TSr-8j-7uS" kind="showDetail" id="cHY-Yz-A5o"/>
+                        <segue destination="TSr-8j-7uS" kind="presentation" id="lqw-LR-h4x"/>
+                        <segue destination="TSr-8j-7uS" kind="popoverPresentation" id="ibV-u2-Ypi">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
+                        <segue destination="TSr-8j-7uS" kind="custom" id="Jth-t5-cpc"/>
+                        <segue destination="TSr-8j-7uS" kind="push" id="ZtG-3j-zj4"/>
+                        <segue destination="TSr-8j-7uS" kind="modal" id="Avy-oD-aPE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1844" y="113.79310344827587"/>
+            <point key="canvasLocation" x="2571" y="113"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4sS-RL-oR2">
+            <objects>
+                <viewController id="TSr-8j-7uS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5PP-0y-pNR"/>
+                        <viewControllerLayoutGuide type="bottom" id="2nG-0h-MF2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NKX-Nf-Qtx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3AU-C8-ngt">
+                                <rect key="frame" x="347" y="73" width="54" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="1" green="0.099565637139999996" blue="0.14364786139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lzt-RD-05w"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92821592090000005" green="0.95267158750000003" blue="0.99979788059999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ar6-sy-aFD">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="AcX-nb-ndV"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TQ4-XK-0wA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3601" y="131"/>
         </scene>
         <!--Login Controller-->
         <scene sceneID="JwS-We-RnZ">
@@ -175,7 +216,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izK-AZ-MkJ">
-                                <rect key="frame" x="179" y="376" width="57" height="30"/>
+                                <rect key="frame" x="178" y="376" width="57" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
@@ -192,12 +233,15 @@
                         <outlet property="reEnterPassword" destination="OkP-dj-XlQ" id="uOz-51-4si"/>
                         <outlet property="registerBtn" destination="izK-AZ-MkJ" id="Q5a-LW-b8p"/>
                         <outlet property="userName" destination="BrE-4q-PnO" id="q6e-Oy-PzI"/>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="loginNext" id="JLs-os-7aZ"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="loginNext" id="O2m-7T-PqB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rqc-CQ-odD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="916" y="113.79310344827587"/>
+            <point key="canvasLocation" x="1665" y="113"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Hvk-uE-CMJ"/>
+    </inferredMetricsTieBreakers>
 </document>
